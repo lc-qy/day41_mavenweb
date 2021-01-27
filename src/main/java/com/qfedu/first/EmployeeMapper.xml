@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--namespace  命名空间   必须是唯一的-->
+<mapper namespace="empMapper">
+    <!--    执行插入的操作！！！  employee执行插入一条数据的操作-->
+    <!--    id 在映射文件中华要唯一-->
+    <insert id="add">
+        insert into employee(name, age, sex, phone) values('骚磊', 78, "女", "1637738889")
+    </insert>
+    <insert id="add2" parameterType="employee">
+        insert into employee(name, age, sex, phone) values (#{name}, #{age}, #{sex}, #{phone})
+    </insert>
+</mapper>
