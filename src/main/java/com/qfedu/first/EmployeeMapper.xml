@@ -11,4 +11,7 @@
     <insert id="add2" parameterType="employee">
         insert into employee(name, age, sex, phone) values (#{name}, #{age}, #{sex}, #{phone})
     </insert>
+    <insert id="add3" parameterType="employee">
+
+    </insert>
 </mapper>
